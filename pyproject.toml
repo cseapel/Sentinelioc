@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sentinelioc"
+version = "0.2.0"
+description = "Defensive IOC scanner for local host artifact correlation"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+  { name = "Your Name" }
+]
+keywords = ["cybersecurity", "ioc", "threat-intelligence", "detection", "blue-team"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Security",
+  "Environment :: Console"
+]
+dependencies = [
+  "typer>=0.12.3",
+  "rich>=13.7.1",
+  "psutil>=5.9.8",
+  "pydantic>=2.7.1"
+]
+
+[project.urls]
+Homepage = "https://github.com/yourname/sentinelioc"
+Repository = "https://github.com/yourname/sentinelioc"
+Issues = "https://github.com/yourname/sentinelioc/issues"
+
+[project.scripts]
+sentinelioc = "sentinelioc.cli:app"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
