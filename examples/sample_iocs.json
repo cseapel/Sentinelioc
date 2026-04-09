@@ -1,0 +1,26 @@
+[
+  {
+    "type": "filename",
+    "value": "suspicious.exe",
+    "confidence": 45,
+    "source": "sample_feed",
+    "threat_name": "TestFamily",
+    "notes": "Sample filename IOC"
+  },
+  {
+    "type": "filepath",
+    "value": "/tmp/evil.bin",
+    "confidence": 70,
+    "source": "sample_feed",
+    "threat_name": "TestFamily",
+    "notes": "Sample path IOC"
+  },
+  {
+    "type": "hash_sha256",
+    "value": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "confidence": 95,
+    "source": "sample_feed",
+    "threat_name": "EmptyFileHash",
+    "notes": "SHA256 of an empty file"
+  }
+]

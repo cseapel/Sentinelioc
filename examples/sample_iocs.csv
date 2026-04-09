@@ -1,0 +1,4 @@
+type,value,confidence,source,threat_name,notes
+filename,suspicious.exe,45,sample_feed,TestFamily,Sample filename IOC
+filepath,/tmp/evil.bin,70,sample_feed,TestFamily,Sample path IOC
+hash_sha256,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,95,sample_feed,EmptyFileHash,SHA256 of an empty file
